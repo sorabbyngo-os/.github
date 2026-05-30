@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/sorabbyngo-os/.github/main/assets/sorabbyngo-os-logo.png" alt="Sorabbyngo OS" width="340"/>
+<img src="https://raw.githubusercontent.com/sorabbyngo-os/.github/main/assets/sorabbyngo-os-logo.jpeg" alt="Sorabbyngo OS" width="340"/>
 
 <br/>
 
