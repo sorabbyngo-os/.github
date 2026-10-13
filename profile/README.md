@@ -1,696 +1,192 @@
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/sorabbyngo-os/.github/main/assets/sorabbyngo-os-logo.jpeg" alt="Sorabbyngo OS" width="340"/>
-
-<br/>
-
-# Sorabbyngo OS
-
-### The Operating System That Thinks.
-
-<br/>
-
-*Africa's first AI-native sovereign operating system — built from the ground up.*
-
-<br/>
-
-[![Kernel](https://img.shields.io/badge/Kernel-Linux%206.19.10--sorabbyngo-88ff44?style=for-the-badge&labelColor=040a04)](https://github.com/sorabbyngo-os)
-[![Status](https://img.shields.io/badge/Status-Active%20Development-FF6B35?style=for-the-badge)](https://github.com/sorabbyngo-os)
-[![Division](https://img.shields.io/badge/Division-Sorabbyngo-6C3FC4?style=for-the-badge)](https://github.com/sorabbyngo-headquarters)
-
-</div>
-
----
-
-<br/>
-sorabbyngo init
-loading kernel 6.19.10-sorabbyngo...
-initializing NodeID driver...
-initializing Byngonet driver...
-AI core: ONLINE
-Chameha interface: LOADED
-CML safety layer: ACTIVE
-system services: ONLINE
-user environment: LOADED
-
-
 Sorabbyngo OS
-System Ready.
-_
-<br/>
+
+**The Rhythm of Digital Life**
+
+> What if the operating system were not a place you visit —  
+> but a presence that works with you?
+
+Sorabbyngo OS is an independent, AI-native Linux system.  
+It keeps the power, scripts, and compatibility of Linux —  
+and rebuilds the *experience* around intent, space, and continuity.
+
+Not a desktop with a chatbot bolted on.  
+Not a cloud appliance that dies offline.  
+A real OS: bootable, inspectable, local-first —  
+with intelligence as a **runtime**, not a product pitch.
 
 ---
 
-<br/>
-
-## What is Sorabbyngo OS?
-
-Sorabbyngo OS is Africa's sovereign, AI-native operating system — built on Linux 6.19.10 with two proprietary kernel modules, a custom AI runtime, and an offline-first architecture designed for the most demanding and resource-constrained environments on earth.
-
-It is not a Linux distribution. It is not a fork. It is a complete sovereign OS platform — from the kernel to the interface — built to run every device in the Sorabbyngo ecosystem.
-
-<br/>
-
----
-
-<br/>
-
-## Core Architecture
-
-<div align="center">
-
-| Layer | Component | Role |
-|---|---|---|
-| 🧠 **AI Runtime** | Byngox | 8-agent AI swarm engine running on-device |
-| 🌐 **Network** | Byngonet | AI-native mesh protocol, post-quantum crypto |
-| 🆔 **Identity** | NodeID | Hardware-bound cryptographic device fingerprint |
-| 🎙️ **Interface** | Chameha | Voice-first AI personality layer, bilingual |
-| 🛡️ **Safety** | CML | Cognitive Mediation Layer — AI safety & compliance |
-| ⚙️ **Kernel** | Linux 6.19.10-sorabbyngo | Custom kernel with proprietary drivers |
-| 📦 **Init** | BusyBox + Buildroot 2024.02 | Lightweight, no systemd dependency |
-
-
-# Sorabbyngo OS Ecosystem Status
-
-**Engineering Architecture Update — June 2026**
-
----
-
-# Purpose
-
-This document defines the current architecture of the Sorabbyngo ecosystem after the latest engineering decisions. It is intended to guide all contributors and keep every repository aligned as development scales.
-
----
-
-# High-Level Architecture
-
-```
-                     USER
-          Voice • Touch • Keyboard
-                    │
-                    ▼
-               CHAMEHA
-      Personality • Conversation
-      Intent • AION Runtime
-                    │
-                    ▼
-               BYNGOX
-     Multi-Agent Cognitive Engine
-                    │
-                    ▼
-        Capability & Hardware APIs
-                    │
-        ┌───────────┴────────────┐
-        │                        │
-        ▼                        ▼
-Hardware Agent             Byngonet
-(Device Knowledge)       Networking Layer
-        │                        │
-        └───────────┬────────────┘
-                    ▼
-          Sorabbyngo Base
-     Immutable Fedora Foundation
-                    │
-                    ▼
-               Linux Kernel
-                    │
-                    ▼
-                Hardware
-```
-
----
-
-# Repository Responsibilities
-
-## Chameha
-
-Repository:
-
-```
-sorabbyngo-os/chameha
-```
-
-Purpose:
-
-Chameha is the user-facing AI.
-
-It is responsible for:
-
-* Voice interaction
-* Chat interaction
-* Personality
-* Long-term conversations
-* Intent understanding
-* User preferences
-* Memory access
-* Running the AION runtime
-* Request orchestration
-
-Users never interact directly with Byngox.
-
-To the user there is only **Chameha**.
-
----
-
-## AION
-
-AION is **not a standalone repository.**
-
-AION lives inside Chameha.
-
-Responsibilities:
-
-* Device orchestration
-* Intent execution
-* Hardware control
-* Capability planning
-* Safe execution
-* Scheduling
-* Action verification
-
-AION converts:
-
-```
-User Intent
-      ↓
-Execution Plan
-      ↓
-Byngox
-      ↓
-Operating System
-```
-
----
-
-## Byngox
-
-Repository:
-
-```
-sorabbyngo-os/byngox
-```
-
-Purpose:
-
-Distributed reasoning engine.
-
-Byngox never communicates with users.
-
-Responsibilities:
-
-* Multi-agent reasoning
-* Planning
-* Context analysis
-* Medical reasoning
-* Learning
-* Security reasoning
-* Risk evaluation
-* Decision aggregation
-
-Current architecture:
-
-```
-Coordination Agent
-
-├── Health
-├── Drug
-├── Learning
-├── Population
-├── Security
-├── Context
-├── Network
-├── Hardware
-```
-
-The new **Hardware Agent** becomes a first-class agent.
-
----
-
-## Hardware Agent
-
-New agent inside Byngox.
-
-Purpose:
-
-Maintain complete awareness of the current device.
-
-It continuously understands:
-
-CPU
-
-GPU
-
-RAM
-
-Battery
-
-Thermals
-
-Storage
-
-Network
-
-Sensors
-
-Camera
-
-Microphone
-
-Power source
-
-Display
-
-Accelerators
-
-Running workloads
-
-Resource limits
-
-Hardware health
-
-Example:
-
-```
-User:
-
-Train this model.
-
-↓
-
-Hardware Agent
-
-RTX 3050
-8 GB RAM
-
-↓
-
-Byngox
-
-Chooses quantized model
-
-↓
-
-AION executes safely.
-```
-
-Another example:
-
-```
-User:
-
-Render a 4K video.
-
-↓
-
-Hardware Agent
-
-Battery = 5%
-
-↓
-
-Reject or delay operation.
-```
-
-This prevents the AI from damaging the device or making unrealistic decisions.
-
----
-
-## Byngonet
-
-Repository:
-
-```
-sorabbyngo-os/byngonet
-```
-
-Updated mission:
-
-Byngonet is **NOT an AI.**
-
-AI responsibilities have moved into Byngox.
-
-Byngonet becomes the networking backbone.
-
-Responsibilities:
-
-* Device discovery
-* Mesh networking
-* Offline synchronization
-* Node identity
-* Secure communication
-* Peer routing
-* Remote execution transport
-* Network health
-* Presence
-* Service discovery
-* File synchronization
-* Session transport
-* Multi-device communication
-
-Think of it as:
-
-```
-AI decides
-
-↓
-
-Byngonet transports
-```
-
-Not
-
-```
-Byngonet thinks.
-```
-
----
-
-## Sorabbyngo Base
-
-Repository:
-
-```
-sorabbyngo-base-kernel/sorabbyngo-base
-```
-
-Purpose:
-
-Operating system foundation.
-
-Contains:
-
-* Fedora Silverblue
-* bootc
-* rpm-ostree
-* Kernel patches
-* Security
-* Runtime
-* APIs
-* Core services
-
-No AI logic belongs here.
-
-It only exposes capabilities.
-
----
-
-# Remote Device Control
-
-Remote execution now follows this chain.
-
-```
-User
-
-↓
-
+## The shift
+
+Computing is still organized like a warehouse:
+
+```text
+User → Application → File → Kernel
+Sorabbyngo organizes it like a workshop you can talk to:
+User → Intent or Direct action
+         ↓
+       Vanta          (spatial desktop — what you see and touch)
+         ↓
+       AION           (AI runtime — plans, routes, mediates)
+         ↓
+       ObjectSpace    (objects, spaces, relationships)
+         ↓
+       Linux          (files, processes, hardware — still real)
+Old center
+Sorabbyngo center
+Applications
+Spaces
+Files
+Objects
+Assistant app
+AION (control plane)
+Manual SSH / IP
+Byngonet continuity
+AI as feature
+AI as mediated runtime
+Applications remain. Files remain.
+They become implementation details under a model built for work that continues.
+Ambition
+Inspired by the idea of an OS you can speak with — continuous across devices, present without being invasive — Sorabbyngo aims at:
+A companion environment — Chameha as voice and personality inside the desktop, from install through daily use
+A spatial desktop — Vanta: Wayland, tiling and freedom, motion that communicates, not decorates
+A safe intelligence layer — AION: models are backends; the system owns the path from intent to effect
+A world model — ObjectSpace: projects, documents, tools, and sessions as structured objects
+Multi-device presence — Byngonet: continue a thought on another machine without ceremony
+An independent Linux distribution — Fedora bootc / ostree lineage for atomic updates and rollbacks; our identity above it
+The bar is high. The discipline is to build the center first: Vanta + AION + ObjectSpace on a solid immutable base.
+Architecture
+┌──────────────────────────────────────────────────────────┐
+│                     User                                 │
+│            voice · touch · keyboard · gesture            │
+└─────────────────────────┬────────────────────────────────┘
+                          │
+┌─────────────────────────▼────────────────────────────────┐
+│  VANTA — spatial Wayland environment                     │
+│  compositor · shell · settings · intent client           │
+│  Chameha lives here (conversation & personality)         │
+└─────────────────────────┬────────────────────────────────┘
+                          │ typed actions / intent
+┌─────────────────────────▼────────────────────────────────┐
+│  AION — AI runtime & control plane                       │
+│  backend selection · context assembly · tool mediation   │
+│  local models · user API keys · remote nodes             │
+└───────────────┬─────────────────────┬────────────────────┘
+                │                     │
+                ▼                     ▼
+        ObjectSpace              Byngonet
+     objects · spaces         inter-node mesh
+     relationships            discovery · handoff
+                │
+                ▼
+┌───────────────────────────────────────────────────────────┐
+│  Linux substrate (Fedora bootc lineage)                   │
+│  ostree/bootc · RPM · systemd · SELinux · kernel          │
+│  “everything is a file” remains true underneath           │
+└───────────────────────────────────────────────────────────┘
+Component
+Role
+Vanta
+Spatial desktop — Smithay/Wayland compositor + shell
 Chameha
-
-↓
-
+Voice, personality, dialogue (inside Vanta)
 AION
-
-↓
-
-Capability Broker
-
-↓
-
+AI runtime — not a model; the mediation layer
+ObjectSpace
+Intelligent objects and spaces
 Byngonet
-
-↓
-
-Target Device
-
-↓
-
-Hardware APIs
-
-↓
-
-Result
-
-↓
-
-Back to User
-```
-
-The user never configures SSH.
-
-No command lines.
-
-No terminal access.
-
-Everything is capability-based.
-
----
-
-# Capability Model
-
-Applications never receive unrestricted hardware access.
-
-Instead:
-
-```
-Application
-
-↓
-
-Capability Broker
-
-↓
-
-Permission Engine
-
-↓
-
-Hardware API
-
-↓
-
-Hardware
-```
-
-Every action is:
-
-* authenticated
-* authorized
-* audited
-* revocable
-
----
-
-# Current Engineering Principles
-
-1. Chameha is the only user-facing AI.
-
-2. AION lives inside Chameha.
-
-3. Byngox performs reasoning only.
-
-4. Hardware knowledge belongs to the Hardware Agent.
-
-5. Byngonet handles networking only.
-
-6. Sorabbyngo Base contains no AI.
-
-7. Every hardware action passes through the Capability Broker.
-
-8. Remote device control is capability-based, not SSH-based.
-
-9. AI decisions are always constrained by actual device capabilities.
-
-10. Desktop and Mobile are the first supported platforms.
-
----
-
-# Current Repository Status
-
-```
-sorabbyngo-base
-        │
-        ├── Fedora Silverblue
-        ├── bootc
-        ├── Security
-        ├── Runtime
-        ├── APIs
-        └── Core Services
-
-                ▲
-
-        Byngonet
-(Network & Connectivity)
-
-                ▲
-
-        Hardware Agent
-(Device Awareness)
-
-                ▲
-
-            Byngox
-(Reasoning Engine)
-
-                ▲
-
-      Chameha + AION
-(User Experience)
-
-                ▲
-
-              User
-```
-
----
-
-# Development Priority
-
-Current roadmap:
-
-**Phase 1**
-
-* Sorabbyngo Base
-* Core services
-* Capability Broker
-* Permission Engine
-
-**Phase 2**
-
-* Hardware Agent
-* Byngonet transport
-* Device APIs
-
-**Phase 3**
-
-* AION integration
-* Remote control
-* Automation
-
-**Phase 4**
-
-* Sorabbyngo Mobile
-
-**Phase 5**
-
-* Sorabbyngo Desktop
-
-This document supersedes earlier designs where networking intelligence resided inside Byngonet. Intelligence is now centralized in Byngox, while networking, transport, and synchronization remain the responsibility of Byngonet.
-
-
-
-</div>
-
-<br/>
-
----
-
-<br/>
-
-## What Makes It Different
-
-> Most operating systems were built for the West — stable power, fast internet, expensive hardware. Sorabbyngo OS was built for Africa.
-
-- 🔒 **Sovereign** — no foreign dependencies, no foreign telemetry, no foreign cloud
-- 📡 **Offline-first** — full AI and system capability with zero internet connectivity
-- 🆔 **Hardware identity** — every device cryptographically identified via NodeID
-- 🌍 **Africa-native** — designed for low connectivity, distributed nodes, adversarial environments
-- 🧠 **AI at the kernel level** — intelligence baked into the OS, not bolted on top
-- ⚡ **Lightweight** — BusyBox init, no systemd, optimised for constrained hardware
-
-<br/>
-
----
-
-<br/>
-
-## Proprietary Kernel Modules
-
-### NodeID
-Hardware-bound cryptographic device identity. Every device running Sorabbyngo OS gets a unique, tamper-proof identity tied to its hardware — enabling secure authentication, audit trails, and network identity without relying on external certificate authorities.
-
-### Byngonet
-Netfilter-based network identity and packet tagging. An AI-native mesh network protocol with post-quantum cryptography — enabling offline-first distributed networking, swarm routing, and sovereign communications between Sorabbyngo devices.
-
-<br/>
-
----
-
-<br/>
-
-## Devices It Runs On
-
-| Device Class | Status |
-|---|---|
-| Desktop / Laptop | ✅ Active |
-| Embedded IoT | ✅ Active |
-| Edge servers | ✅ Active |
-| Smartphones | 🔜 Planned |
-| Drones & Robotics | 🔜 Planned |
-| Satellite terminals | 🔜 Planned |
-| Autonomous vehicles | 🔜 Planned |
-
-<br/>
-
----
-
-<br/>
-
-## Repositories
-
-| Repo | Description |
-|---|---|
-| [**sorabbyngo-os**](https://github.com/sorabbyngo-os/sorabbyngo-os) | Core OS — kernel, HAL, AI runtime |
-| [**sorabbyngo-patches**](https://github.com/sorabbyngo-os/sorabbyngo-patches) | Kernel patch set — NodeID + Byngonet on Linux 6.19.10 |
-| [**byngonet**](https://github.com/sorabbyngo-os/byngonet) | AI-native mesh network driver |
-| [**chameha**](https://github.com/sorabbyngo-os/chameha) | AI personality and voice interface layer |
-| [**cml**](https://github.com/sorabbyngo-os/cml) | Cognitive Mediation Layer — safety and compliance |
-| [**byngox**](https://github.com/sorabbyngo-os/byngox) | 8-agent AI swarm inference engine |
-| [**sorabbyngo-build**](https://github.com/sorabbyngo-os/sorabbyngo-build) | Architecture decisions, phase plans, engineering roadmap |
-
-<br/>
-
----
-
-<br/>
-
-## Build Info
-Kernel        Linux 6.19.10-sorabbyngo
-Compiler      GCC 12
-Drivers       NodeID · Byngonet
-Init          BusyBox · Buildroot 2024.02
-Target        x86_64 · ARM (planned)
-Boot          QEMU verified · hardware boot in progress
-AI Runtime    Byngox (on-device inference)
-Interface     Chameha (voice-first, offline)
-Safety        CML middleware
-
-<br/>
-
----
-
-<br/>
-
-## Part of Sorabbyngo
-
-| Component | Role |
-|---|---|
-| [**Soraxis**](https://github.com/soraxis-tech) | Hardware that runs Sorabbyngo OS |
-| [**Sorabyte**](https://github.com/sorabyte-cloud) | AI compute and cloud layer |
-| [**Citadel**](https://github.com/citadel-sec) | Security hardening and compliance |
-| [**Novela**](https://github.com/novela-health) | Health platform running on Sorabbyngo OS |
-| [**Vector**](https://github.com/sorabbyngo-vector) | Logistics fleet running Sorabbyngo OS |
-
-<br/>
-
----
-
-<br/>
-
-<div align="center">
-
-**Sorabbyngo OS** is built by [Sorabbyngo Company](https://github.com/sorabbyngo-headquarters)
-<br/>
-Kisii, Kenya · 2026
-<br/><br/>
-*Rhythm of Digital Life*
-
-</div>
+Secure communication between Sorabbyngo nodes
+Sentinel
+Health, supervision, recovery
+fedora-base
+Immutable base, image recipes, inherited stack
+Technical foundations
+Layer
+Choice
+Rationale
+Base OS
+Fedora bootc / ostree
+Atomic updates, rollbacks, container-native images
+Packages
+RPM
+Matches Fedora/RHEL ecosystem; proven tooling
+Init
+systemd
+Sessions, cgroups, service supervision (with Sentinel above)
+MAC
+SELinux
+Confine AI backends and privileged paths
+Desktop
+Wayland + Smithay (Rust)
+Modern display stack; Vanta owns the session
+AI integration
+AION as control plane
+Pluggable local / API / remote backends
+Isolation
+cgroups, containers (Podman), least privilege
+Models propose; AION mediates; no raw root for models
+Architecture (first)
+x86_64
+Intel/AMD first; NVIDIA optional via RPM Fusion patterns
+Kernel: track the Fedora release pinned by the bootc base image — not a random mainline fork — until real out-of-tree patches demand otherwise.
+Philosophy under the hood: Linux remains Linux.
+Everything is a file at the substrate.
+Objects and spaces are the native language above it.
+Design principles
+Direct path always works — unplug AI; the machine remains a complete desktop.
+Compositor never waits on a model — frames first; intelligence is asynchronous.
+One door for action — GUI, shortcuts, and AION share one mediated API.
+Local-first — core experience survives without the cloud.
+You choose the intelligence — models are backends; better ones appear monthly.
+Predictable and undoable — power without mystery.
+Presence across distance — multi-device continuity is a product capability, not a manual ritual.
+Open core, honest boundaries — system runnable offline; optional services may fund the project later without locking the foundation.
+Status
+Pre-alpha. Active design and foundation work.
+Track
+State
+Vision & component boundaries
+Defined
+Fedora bootc inheritance (fedora-base)
+Sources and image recipes in prep
+Vanta (spatial desktop)
+Design + Phase 0 scaffolding
+AION
+Runtime architecture defined; implementation ahead
+ObjectSpace / Byngonet / Sentinel
+Spec and early research
+Earlier experiments (custom agents, embedded planners, broad repo sprawl) informed the present shape: fewer cores, clearer contracts, ship the center.
+Repository map
+Repository
+Purpose
+sorabbyngo-os (this)
+Product face, vision, orchestration
+vanta
+Spatial desktop environment
+aion
+AI runtime and control plane
+objectspace
+Spatial object runtime
+chameha
+Voice and personality
+byngonet
+Inter-node communication
+fedora-base
+Immutable base and build inheritance
+sentinel
+Monitoring and self-healing
+Open direction
+The core system is intended to be open and independently runnable.
+Sustainable paths (later, after something real ships):
+optional hosted intelligence and multi-device relays
+professional support and fleet features
+hardware or vertical bundles
+First the rhythm must be real.
+Then the economy can follow.
+License
+To be decided.
+All rights reserved until a license is published.
+Sorabbyngo
+The Rhythm of Digital Life
+Not merely a system you operate —
+a presence that works with you.
