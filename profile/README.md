@@ -71,9 +71,8 @@ Four ideas shape everything in this organization:
 | Repository | What it is |
 | --- | --- |
 | [**vanta**](https://github.com/sorabbyngo-os/vanta) | The AI-native spatial desktop: a Wayland compositor in Rust on Smithay. |
-| [**chameha**](https://github.com/sorabbyngo-os/chameha) | The voice and personality of the OS, bilingual English and Swahili, living inside Vanta. |
+| [**chameha**](https://github.com/sorabbyngo-os/chameha) | The voice and personality of the OS, living inside Vanta. |
 | [**ai-terminal**](https://github.com/sorabbyngo-os/ai-terminal) | The terminal with AI assistance built in. |
-| [**byngo-press**](https://github.com/sorabbyngo-os/byngo-press) | Publishing and documentation tooling for the project. |
 
 ### Intelligence
 
@@ -112,9 +111,10 @@ Four ideas shape everything in this organization:
 | [**sorabbyngo-kernel**](https://github.com/sorabbyngo-os/sorabbyngo-kernel) | The kernel tree. |
 | [**sorabbyngo-patches**](https://github.com/sorabbyngo-os/sorabbyngo-patches) | The patch set on Linux 6.19.10, including the NodeID and Byngonet drivers. |
 | [**fedora-base**](https://github.com/sorabbyngo-os/fedora-base) | The Fedora-derived base, image definitions and inherited system components. |
-| [**hal**](https://github.com/sorabbyngo-os/hal) | The hardware abstraction layer. |
+| [**hal**](https://github.com/sorabbyngo-os/hal) | The hardware abstraction layer, including sensors. |
 | [**hypervisor-engine**](https://github.com/sorabbyngo-os/hypervisor-engine) | Virtualization support for isolated workloads. |
-| [**sorabbyngofs**](https://github.com/sorabbyngo-os/sorabbyngofs) | The filesystem layer. |
+| [**sorabbyngofs**](https://github.com/sorabbyngo-os/sorabbyngofs) | The AI-native virtual filesystem module. |
+| [**byngo-press**](https://github.com/sorabbyngo-os/byngo-press) | The compression layer. |
 | [**resource-governor**](https://github.com/sorabbyngo-os/resource-governor) | CPU, memory and I/O limits so no component starves the others. |
 | [**os-watchdog**](https://github.com/sorabbyngo-os/os-watchdog) | Watches system health and restarts what fails. |
 | [**self-healing**](https://github.com/sorabbyngo-os/self-healing) | Automatic detection and repair of faults. |
@@ -144,5 +144,5 @@ Each repository carries its own license in its `LICENSE` file. Check it before y
 
 <p align="center">
   <b>Sorabbyngo</b> · <i>The Rhythm of Digital Life</i><br>
-  Built in Kenya, for everyone.
+  Built for everyone.
 </p>
