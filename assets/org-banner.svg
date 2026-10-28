@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-labelledby="ot od">
+  <title id="ot">Sorabbyngo OS</title>
+  <desc id="od">Sorabbyngo OS, an independent AI-native Linux system. A mesh of glowing nodes pulses behind the title.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080608"/>
+      <stop offset="1" stop-color="#170a2b"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#AA66FF"/>
+      <stop offset="0.6" stop-color="#6C3FC4"/>
+      <stop offset="1" stop-color="#FF6B35"/>
+    </linearGradient>
+    <radialGradient id="gP">
+      <stop offset="0" stop-color="#AA66FF" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#AA66FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gO">
+      <stop offset="0" stop-color="#FF6B35" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#FF6B35" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="frame"><rect width="1200" height="360" rx="24"/></clipPath>
+  </defs>
+  <style>
+    .t { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; }
+    @keyframes rise  { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes drift { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-36px,16px); } }
+    @keyframes pulse { 0%,100% { opacity: 0.35; } 50% { opacity: 1; } }
+    @keyframes dash  { to { stroke-dashoffset: -36; } }
+    .a1 { opacity: 0; animation: rise 0.9s ease-out 0.2s forwards; }
+    .a2 { opacity: 0; animation: rise 0.9s ease-out 0.5s forwards; }
+    .a3 { opacity: 0; animation: rise 0.9s ease-out 0.8s forwards; }
+    .a4 { opacity: 0; animation: rise 0.9s ease-out 1.1s forwards; }
+    .g1 { animation: drift 15s ease-in-out infinite; }
+    .g2 { animation: drift 19s ease-in-out -7s infinite reverse; }
+    .edge { stroke: #AA66FF; stroke-width: 1.4; fill: none; stroke-dasharray: 5 7; opacity: 0.5; animation: dash 2.6s linear infinite; }
+    .n  { fill: #AA66FF; animation: pulse 3s ease-in-out infinite; }
+    .no { fill: #FF6B35; animation: pulse 3s ease-in-out infinite; }
+    .d1 { animation-delay: -0.5s; } .d2 { animation-delay: -1.2s; } .d3 { animation-delay: -1.9s; } .d4 { animation-delay: -2.4s; }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="360" fill="url(#bg)"/>
+    <circle class="g1" cx="960" cy="120" r="270" fill="url(#gP)"/>
+    <circle class="g2" cx="1120" cy="320" r="210" fill="url(#gO)"/>
+
+    <!-- mesh -->
+    <path class="edge" d="M720 90 L860 160 L1010 80 L1120 170"/>
+    <path class="edge" d="M860 160 L800 275 L960 300 L1010 80"/>
+    <path class="edge" d="M960 300 L1120 170 L1090 290"/>
+    <path class="edge" d="M720 90 L800 275"/>
+
+    <circle class="n"  cx="720"  cy="90"  r="7"/>
+    <circle class="no d1" cx="860"  cy="160" r="10"/>
+    <circle class="n d2" cx="1010" cy="80"  r="7"/>
+    <circle class="n d3" cx="1120" cy="170" r="8"/>
+    <circle class="n d4" cx="800"  cy="275" r="7"/>
+    <circle class="no d2" cx="960"  cy="300" r="8"/>
+    <circle class="n d1" cx="1090" cy="290" r="6"/>
+
+    <!-- travelling packet -->
+    <circle r="5" fill="#ffffff">
+      <animateMotion dur="9s" repeatCount="indefinite" path="M720 90 L860 160 L1010 80 L1120 170 L960 300 L800 275 L720 90"/>
+    </circle>
+
+    <text class="t a1" x="70" y="96" font-size="14" font-weight="700" letter-spacing="7" fill="#FF6B35">SORABBYNGO · OPEN SOURCE</text>
+    <text class="t a2" x="66" y="190" font-size="92" font-weight="800" letter-spacing="8" fill="url(#title)">SORABBYNGO OS</text>
+    <text class="t a3" x="70" y="244" font-size="26" fill="#EADFFF">An independent, AI-native Linux system.</text>
+    <text class="t a4" x="70" y="286" font-size="18" font-style="italic" fill="#AA66FF">Models come and go. The path from intent to effect stays yours.</text>
+    <text class="t" x="70" y="326" font-size="13" fill="#8a78b5" letter-spacing="2">RHYTHM OF DIGITAL LIFE</text>
+  </g>
+  <rect x="0.75" y="0.75" width="1198.5" height="358.5" rx="24" fill="none" stroke="#6C3FC4" stroke-opacity="0.6" stroke-width="1.5"/>
+</svg>
